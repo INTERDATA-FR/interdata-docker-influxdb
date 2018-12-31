@@ -1,0 +1,7 @@
+influxdb:
+  container_name: $INFLUXDB_CONTAINER_NAME
+  image: $INFLUXDB_IMAGE_NAME:$INFLUXDB_IMAGE_TAG
+  ports:
+    - "8083:8083"
+    - "8086:8086"
+  tty: true

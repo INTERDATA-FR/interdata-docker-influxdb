@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export DOCKER_FILE		= docker-compose.yml
+
+export UBUNTU_IMAGE_NAME	= ubuntu
+export UBUNTU_IMAGE_TAG		= 18.04
+
+export UBUNTU_IMAGE		= $(UBUNTU_IMAGE_NAME):$(UBUNTU_IMAGE_TAG)
+
+
+export INFLUXDB_CONTAINER_NAME	= interdata_influxdb
+export INFLUXDB_IMAGE_NAME	= interdatafr/interdata-docker-influxdb
+export INFLUXDB_IMAGE_VERSION	= 1.7.2
+
+export INFLUXDB_IMAGE_TAG	= v$(UBUNTU_IMAGE_TAG)_$(INFLUXDB_IMAGE_VERSION)
